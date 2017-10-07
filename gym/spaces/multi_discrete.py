@@ -40,7 +40,7 @@ class MultiDiscrete(gym.Space):
 
     @property
     def shape(self):
-        return self.num_discrete_space
+        return (self.num_discrete_space, )
     def __repr__(self):
         return "MultiDiscrete" + str(self.num_discrete_space)
     def __eq__(self, other):

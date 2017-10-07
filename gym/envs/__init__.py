@@ -1,5 +1,13 @@
 from gym.envs.registration import registry, register, make, spec
 
+# Custom Environment (Sliding Puzzle)
+# ----------------------------------------
+register(
+        id='SlidingPuzzle-v0',
+        entry_point='gym.envs.custom_environments:SlidingPuzzleEnv',
+        max_episode_steps=10,
+        )
+
 # Algorithmic
 # ----------------------------------------
 
@@ -507,3 +515,5 @@ register(
     entry_point='gym.envs.safety:OffSwitchCartpoleProbEnv',
     max_episode_steps=200,
 )
+
+
